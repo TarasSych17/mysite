@@ -1,0 +1,179 @@
+html, body {
+	
+	height: 100%; 
+		
+		
+} 
+body {
+	margin: 0; 
+	
+	 background: linear-gradient(45deg, #0052d4, #6fb1fc);
+	 no repeat; 
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #FFFFFF;
+    overflow: hidden;
+    display: flex; /* Додаємо display: flex; */
+    align-items: center; /* Додаємо align-items: center; */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    display: inline-block;
+    color: #000000;
+    text-align: center;
+    padding: 20px 46px;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav .phone-number {
+    margin-right: auto; /* Додаємо margin-right: auto; */
+    padding: 20px 46px; /* Задаємо потрібний відступ для номеру телефону */
+}
+
+#dagurdsa-nevailable {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  background:  #0052d4;
+  width: 28px;
+  height: 27px;
+  font: 15px Arial;
+  color: #f5f0f0;
+  text-align: center;
+  padding: 40px 10px 0px 0px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+  cursor:pointer;
+}
+
+#gechusudesab-sequiremen {
+  position: fixed;
+  top: 100px;
+  left: -420px;
+  background: #FFFFFF;
+  color: #1f1e1e;
+  width: 400px;
+  height: 273px;
+  padding: 8px;
+  text-align: left;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+#dagurdsa-nevailable:hover {
+  left: 215px;  
+}
+#dagurdsa-nevailable:hover #gechusudesab-sequiremen {
+  left: 0;  
+}
+.widt {
+	
+background-color: #FFFFFF;
+color: fff; 
+padding: 10px; 
+width: 60%; 
+margin-left: auto;
+border-radius: 2%; 
+
+}
+.dropbtn {
+    background-color: #FFFFFF;
+    color: dark;
+    padding: 16px;
+
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+border-radius: 25px;
+    right: 0;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+border-radius: 20px;
+    color: dark;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #E8E8E8;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #E8E8E8;}
+
+
+
+.block3{
+	background: linear-gradient( #0052d4, #C2DFFF);
+	color: black;
+	padding: 13px;
+
+	margin-left: 8%;
+	float: left;
+	width: 300px; 
+	height: 200px; 
+	box-shadow: 0 8px 16px rgba(0 , 0  ,0 , 0.5); 
+	text-align: center;
+	background-color: blue;
+      transition: transform 0.5s;
+
+
+}
+
+.block3:hover {
+      transform: scale(1.1);
+    
+
+}
+.block3 a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: black;
+    }
+
+
+footer{
+background: #ffff;
+	width: 97%;
+	padding: 10px; 
+	margin:auto;
+	position: auto; 
+	left: 0; 
+	bottom: 0; 
+
+	
+}
