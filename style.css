@@ -5,11 +5,17 @@ html, body {
 		
 } 
 body {
-	margin: 0; 
-	
-	 background: linear-gradient(45deg, #0052d4, #0006b8);
-	 no repeat; 
+    margin: 0;
+    padding: 0;
+    background-image: url('earth.gif'); /* Шлях до вашого гіф-зображення */
+    background-size: cover;
+    background-position: center;
 }
+.my-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
 
 /* Add a black background color to the top navigation */
 .topnav {
