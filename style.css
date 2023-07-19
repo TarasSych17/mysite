@@ -7,7 +7,7 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-    background-image: url('earth.gif'); /* Шлях до вашого гіф-зображення */
+    background-image: url('img/earth.gif'); /* Шлях до вашого гіф-зображення */
     background-size: cover;
     background-position: center;
 }
