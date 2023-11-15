@@ -7,7 +7,7 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-    background-image: url('img/1.gif'); /* Шлях до вашого гіф-зображення */
+    background-image: url('img/1.gif'); /* Сюди поставити назву гіфки для заміни*/
     background-size: cover;
     background-position: center;
 }
