@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.image-wrapper {
+    perspective: 1000px; /* Додає глибину для 3D-ефекту */
+}
+
+.image-rotate {
+    width: 300px; /* Задайте потрібний розмір */
+    transition: transform 0.5s ease; /* Параметри переходу */
+}
+
+.image-rotate:hover {
+    transform: rotate(360deg); /* Обертання на 360 градусів */
+}
