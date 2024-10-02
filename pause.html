@@ -34,25 +34,42 @@
 </head>
 <body>
     <div class="board" id="board"></div>
+    <div id="message"></div>
     <script>
         const board = document.getElementById('board');
-        let turn = 'x'; // Початковий хід
+        const message = document.getElementById('message');
+        let turn = 'x';
         const cells = Array(9).fill(null);
-        
+
         board.addEventListener('click', (e) => {
             const index = Array.from(board.children).indexOf(e.target);
             if (!cells[index] && index >= 0) {
                 cells[index] = turn;
                 e.target.classList.add(turn);
                 e.target.textContent = turn === 'x' ? 'X' : 'O';
-                turn = turn === 'x' ? 'o' : 'x';
-                // Перевірка на перемогу тут
+                if (checkWinner(turn)) {
+                    message.textContent = `Переміг ${turn === 'x' ? 'Хрестик' : 'Нолик'}!`;
+                    board.style.pointerEvents = 'none'; // Зупинити кліки
+                } else if (cells.every(cell => cell)) {
+                    message.textContent = 'Нічия!';
+                } else {
+                    turn = turn === 'x' ? 'o' : 'x';
+                }
             }
         });
 
+        function checkWinner(player) {
+            const winningCombos = [
+                [0, 1, 2], [3, 4, 5], [6, 7, 8],
+                [0, 3, 6], [1, 4, 7], [2, 5, 8],
+                [0, 4, 8], [2, 4, 6]
+            ];
+            return winningCombos.some(combo => combo.every(index => cells[index] === player));
+        }
+
         function renderBoard() {
             board.innerHTML = '';
-            cells.forEach((cell, index) => {
+            cells.forEach((cell) => {
                 const div = document.createElement('div');
                 div.className = 'cell';
                 div.textContent = cell === 'x' ? 'X' : cell === 'o' ? 'O' : '';
