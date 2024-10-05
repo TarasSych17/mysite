@@ -11,6 +11,28 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+
+
+	.icon-container {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.icon {
+    width: 100px; /* Встановіть потрібний розмір */
+}
+
+.icon-container:hover {
+    animation: shake 0.5s ease forwards;
+    transform: scale(1.01);
+}
+
+@keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-2px, 0); }
+    50% { transform: translate(2px, 0); }
+    75% { transform: translate(-2px, 0); }
+    100% { transform: translate(0); }
 }
 		</style>
 	
@@ -56,7 +78,7 @@
 <tr>
  <td><a href="https://billing.columbus.te.ua/clients2.php" target = "_blank" ><img  src="img/start.png" width="180" heaight="180" ></td>
  <td width ="100%"></td>
-<td> <a href="https://app.powerbi.com/home?experience=power-bi" target = "_blank" ><img  src="img/sk.png" width="50" heaight="20" ></a></td>	
+<td> <a href="https://app.powerbi.com/home?experience=power-bi" target = "_blank" ><img  class="icon" src="img/sk.png" width="50" heaight="20" ></a></td>	
 <td> <a href="https://www.youtube.com/" target = "_blank" ><img  src="img/4.png" width="50" heaight="20" ></a></td>
 <td> <a href="https://drive.google.com/drive/home" target = "_blank" ><img class="rotate"  src="img/drive.png" width="50" heaight="20" ></a></td>
  <td>
