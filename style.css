@@ -7,7 +7,7 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-    background-image: url('img/44.gif'); /* Сюди поставити назву гіфки для заміни*/
+    background-image: url('img/22.gif'); /* Сюди поставити назву гіфки для заміни*/
     background-size: cover;
     background-position: center;
 }
@@ -154,7 +154,7 @@ margin-right: auto;
 }
 
 .block3 {
-  background: linear-gradient(#8B0000, #9B111E);
+  background: linear-gradient(#0052d4, #C2DFFF);
   color: black;
   padding: 13px;
   margin-bottom: 20px;
@@ -191,5 +191,6 @@ background: #ffff;
 
 	
 }
+
 
 
